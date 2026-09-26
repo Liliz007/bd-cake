@@ -365,7 +365,7 @@
                 const line2 = greetingLine2 || "祝你开心";
                 const totalChars = line1.length + line2.length;
                 if (totalChars <= 8) {
-                    const phraseGap = clamp(size * 2.65, 98, 240);
+                    const phraseGap = clamp(size * 2.2, 80, 220);
                     return getExtrudedText3DPoints(line1, size, depth, y, -phraseGap)
                         .concat(getExtrudedText3DPoints(line2, size, depth, y, phraseGap));
                 }
@@ -411,7 +411,7 @@
                 countdownNum = 3;
                 uiLayer.style.opacity = "1";
                 uiLayer.style.transform = "translateX(-50%)";
-                setStatus("倒计时开始", "为你凝聚一份惊喜");
+                setStatus("倒计时开始", "一个小小小礼物~");
                 morphTo3DCount(countdownNum);
                 playTone("tap");
 

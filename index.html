@@ -362,7 +362,7 @@
 
             function buildGreetingPoints(size, y, depth) {
                 const line1 = greetingLine1 || "生日快乐";
-                const line2 = greetingLine2 || "祝你开心";
+                const line2 = greetingLine2 || "万事胜意!";
                 const totalChars = line1.length + line2.length;
                 if (totalChars <= 8) {
                     const phraseGap = clamp(size * 2.2, 80, 220);
@@ -503,7 +503,7 @@
                 playTone("candle");
                 window.clearTimeout(blowPromptTimer);
                 window.clearTimeout(cakeAutoTimer);
-                setStatus("蜡烛已吹灭", "点击或按空格可重新点燃蜡烛");
+                setStatus("蜡烛已吹灭", "愿望一定会实现的！");
                 cakeAutoTimer = window.setTimeout(() => {
                     if (currentState === STATE.CAKE) cakeAutoEntering = false;
                 }, 800);
